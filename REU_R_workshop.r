@@ -108,6 +108,18 @@ abline(lm(myLinearReg),col="red")
 summary(lm(myLinearReg))
 
 plot(lm(myLinearReg))  #Plot diagnostic plots for Linear regression
+############
+#Bad example for linear regression
+t=seq(0,10,0.1)
+z<-t+sin(5*t)
+plot(t,z)
+abline(lm(t~z),col="red")
+summary(lm(t~z))
+plot(lm(t~z))
+
+
+
+
 
 #################################
 #################################
